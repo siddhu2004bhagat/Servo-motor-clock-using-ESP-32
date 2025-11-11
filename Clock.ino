@@ -39,7 +39,14 @@ void setup()
   // Start Serial for debugging
   Serial.begin(115200);
 
-  // Put all the servos ON , 88:88 and wait for ever .Only for Test/Calibration
+
+
+
+//                                         THIS IS THE VERY MAIN THING TO DO SO FOCUS ON THIS LINE 
+
+
+  
+// Put all the servos ON , 88:88 and wait for ever .Only for Test/Calibration
  // CalibrateServos();
 
   // Start Clock application
