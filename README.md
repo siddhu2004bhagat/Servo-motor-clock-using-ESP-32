@@ -1,3 +1,8 @@
+
+
+
+![Servo Clock Diagram]("pic 7.jpg")
+
 ⏰ Servo Clock Using ESP32 and NTP
 
 This project implements a digital clock using ESP32, multiple servo motors, and a 7-segment display structure. It fetches the current time over WiFi using an NTP server and updates the servo-driven segments in real-time.
