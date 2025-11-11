@@ -1,3 +1,35 @@
+
+
+/***********************************************************************
+ *  Servo-Motor Clock Using ESP32
+ *
+ *  Description:
+ *  This Arduino sketch controls a servo-based 7-segment clock using an ESP32.
+ *  It fetches the current time from an NTP server over WiFi and updates
+ *  servo-driven digits to display the hours and minutes in real-time.
+ *
+ *  Features:
+ *    - Real-time clock using NTP synchronization
+ *    - 7-segment digits driven by servo motors
+ *    - Supports calibration for precise servo positioning
+ *    - Works with different time zones (default: IST, UTC+5:30)
+ *
+ *  Hardware Requirements:
+ *    - ESP32 Development Board
+ *    - 8 Servo Motors (for 4 digits × 7 segments)
+ *    - 2 × PCA9685 I2C Servo Drivers
+ *    - Jumper wires and appropriate power supply
+ *
+ *  Note:
+ *    Before running normally, perform calibration by uncommenting 
+ *    the CalibrateServos() function in setup() and uploading the sketch.
+ *    The servos will move to 88:88 to allow adjustment. After calibration,
+ *    comment it back and upload the sketch to start the clock.
+ *
+ *  Author: Siddhu(Sudhanshu Kumar Jaiswal)
+ *  Date: 2025-11-12
+ ***********************************************************************/
+
 #include <WiFi.h>
 #include <time.h>
 #include "SevenSegment.h"
